@@ -1,0 +1,32 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "React application using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devTool eval --hot --inline --colors --progress --output-public-path=/dist"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Ryan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.9.33",
+    "@types/react": "^0.14.44",
+    "@types/react-dom": "^0.14.18",
+    "axios": "^0.15.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.0.0",
+    "typescript": "^2.0.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
