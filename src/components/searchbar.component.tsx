@@ -15,9 +15,14 @@ class SearchBar extends Component<any, any> {
                 placeholder="請輸入搜尋關鍵字"
                 value={this.state.keyword}
                 onChange={(event) => {
-                    this.setState({ keyword: (event.target as HTMLInputElement).value });
+                    this.onInputChange((event.target as HTMLInputElement).value);
                 } } />
         );
+    }
+
+    onInputChange(keyword: string) {
+        this.setState({ keyword: keyword });
+        this.props.onKeywordChange(keyword);
     }
 }
 
